@@ -28,7 +28,7 @@ the certificate must be "CA" and the certificate key-usages must include "Certif
 
 you must also specify the path to the certificate and its private key in the MMDF-config.
 
-you can create self-signed-certificate with openssl commands or use online websites like: https://regery.com/en/security/ssl-tools/self-signed-certificate-generator and https://certificatetools.com.
+you can create self-signed-certificate with "openssl" commands or use online websites like: https://regery.com/en/security/ssl-tools/self-signed-certificate-generator and https://certificatetools.com.
 
 (These sites are the first search results on Google when you search: "create online self signed certificate", so these sites are probably safe.)
 
