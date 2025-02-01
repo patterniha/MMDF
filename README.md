@@ -33,6 +33,7 @@ you can create self-signed-certificate with openssl commands or use online websi
 
 ## Full setup tutorial:
 1. create self-signed certificate with a desired name from https://regery.com/en/security/ssl-tools/self-signed-certificate-generator and download both the certificate and the private-key.
+
    **WARNING: Don't use an unknown certificate, just create your own self-signed certificate and use it.**
 2. set the certificate and the private-key path in MMDF-config.
 3. import the certificate to the system and browser
