@@ -67,19 +67,33 @@ you can create self-signed-certificate with openssl commands or use online websi
 except in cases where the IP is blocked or the server does not allow domain fronting, MMDF bypasses the GFW.
 
 * some websites that allow domain fronting(Although the IP of some of them may be blocked):
+
   all google services(google,youtube,...)
+
   almost all independent websites
+
   twitter
+
   reddit
+
   meta(facebook, instagram, whatsapp)
+
   telegram
+
   ...
+
 * some websites that do not allow domain fronting:
+
   almost all websites behind cloudflare
+
   microsoft websites
+
   tiktok
+
   twitch
+
   soundcloud
+
   ...
 
 # Security concerns:
