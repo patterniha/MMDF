@@ -42,6 +42,7 @@ you can create self-signed-certificate with "openssl" commands or use online web
 
      for Android, you only need to import the certificate into the system:
      Setting -> Security and privacy -> More security settings -> Install from device storage -> CA Certificate -> Install anyway -> Select the Certificate file on your storage.
+
      if successfully imported, you can view the certificate in: Setting -> Security and privacy -> More security settings -> View security certificates -> User.
 
     * **windows**:
