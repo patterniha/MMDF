@@ -3,7 +3,6 @@ MMDF is a DPI circumvention method.(like fragment and noise)
 
 MMDF replace the main-sni with a random/user-defined sni in the tls-client-hello.(datails: https://github.com/XTLS/Xray-core/issues/4313#issuecomment-2613963340)
 
-# Usage:
 MMDF is designed to work with xray-core.(or any tools that support trojan inbound/outbound)
 
 MMDF only communicates with Xray-core, MMDF receive the data from xray-core, and after processing, forwards the data to xray-core.
