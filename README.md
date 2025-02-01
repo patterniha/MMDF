@@ -75,7 +75,7 @@ except in cases where the IP is blocked or the server does not allow domain fron
 
 MMDF does not change the IP, so it doesn't help with services that have Sanctioned Iran.
 
-* websites that **allow** domain fronting(although the IP of some of them may be blocked):
+* websites that **allow** domain fronting:
 
   all google services(google,youtube,...)
 
