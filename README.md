@@ -5,7 +5,7 @@ it replaces the main-sni with a random/user-defined sni in the tls-client-hello.
 
 it is designed to work with xray-core.(or any tools that support trojan inbound/outbound)
 
-MMDF only communicates with Xray-core, MMDF receive the data from xray-core, and after processing, forwards the data to xray-core.
+MMDF only communicates with Xray-core, it receive the data from xray-core, and after processing, forwards the data to xray-core.
 
 currently, only trojan inbound/outbound is implemented in MMDF.
 
