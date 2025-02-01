@@ -21,7 +21,7 @@ MMDF only communicates with Xray-core, so you only need to connect to xray-core 
 3. a self-signed certificate(must be imported into 1. system 2. browser 3. MMDF-config)
 
 ## Self-Signed certificate:
-for MMDF to work properly you need a "self-signed certificate" that must be imported into system and browser as a "Trusted-Root-Certification-Authorities".(see https://github.com/XTLS/Xray-core/issues/4313#issuecomment-2613963340)
+for MMDF to work properly you need a "self-signed certificate" that must be imported into system and browser as a "Trusted-Root-Certification-Authorities".(why https://github.com/XTLS/Xray-core/issues/4313#issuecomment-2613963340)
 
 the certificate must be "CA" and the certificate key-usages must include "Certificate Signing" and "CRL Signing".
 
