@@ -15,12 +15,12 @@ in MMDF-config if "fake_sni" is "random", a different random sni will be used fo
 otherwise, the set value will be used for all connections.
 
 
-## Requirements:
+## Requirements
 1. xray-core(v2rayng in android)
 2. python with "cryptography" package
 3. a self-signed certificate(must be imported into 1. system 2. browser 3. MMDF-config)
 
-## Self-Signed certificate:
+## Self-Signed certificate
 for MMDF to work properly you need a "self-signed certificate" that must be imported into system and browser as a "Trusted-Root-Certification-Authorities".(reason: https://github.com/XTLS/Xray-core/issues/4313#issuecomment-2613963340)
 
 the certificate must be "CA" and the certificate key-usages must include "Certificate Signing" and "CRL Signing".
@@ -31,7 +31,7 @@ you can create self-signed-certificate with "openssl" commands or use online web
 
 (These sites are the first search results on Google when you search: "create online self signed certificate", so these sites are probably safe.)
 
-## Full setup tutorial:
+## Full setup tutorial
 1. create self-signed certificate with a desired name from https://regery.com/en/security/ssl-tools/self-signed-certificate-generator and download both the certificate and the private-key.
 
    **WARNING: Don't use an unknown certificate, just create your own self-signed certificate and use it.**
@@ -70,7 +70,7 @@ you can create self-signed-certificate with "openssl" commands or use online web
 
 7. MMDF only communicates with Xray-core, so you only need to set the browser socks5 to xray-core-socks5-inbound: 127.0.0.1:10808 (in v2rayng this is the default socks5 port, so you don't need to do anything).
 
-# Limitation:
+# Limitation
 except in cases where the IP is blocked, MMDF bypasses the GFW.
 
 MMDF does not change the IP, so it doesn't help with services that have Sanctioned Iran.
@@ -107,7 +107,7 @@ also, some services do not allow domain fronting.
 
   ...
 
-# Security concerns:
+# Security concerns
 First, as mentioned, never use an unknown certificate.
 
 **WARNING**: because of the complexity of implementation, currently certificate validation is not performed between MMDF and the target server, and will be added soon.
