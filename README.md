@@ -4,16 +4,17 @@ MMDF(Man in the Middle + Domain Fronting) is a DPI circumvention method.(like fr
 MMDF replace the main-sni with a random/user-defined sni in the tls-client-hello.(datails: https://github.com/XTLS/Xray-core/issues/4313#issuecomment-2613963340)
 
 # Usage:
-currently, MMDF is designed to work with xray-core.(or any tools that support trojan inbound/outbound)
+MMDF is designed to work with xray-core.(or any tools that support trojan inbound/outbound)
 
-the MMDF-trojan-inbound receive the data from xray-core, and after processing, forwards the data to xray-core-trojan-inbound.
+MMDF only communicates with Xray-core, MMDF receive the data from xray-core, and after processing, forwards the data to xray-core.
+
+currently, only trojan inbound/outbound is implemented in MMDF.
 
 an example of xray-config for use with MMDF: https://github.com/patterniha/xray_configs/blob/main/example_xray_config_for_MMDF
 
 in MMDF-config if "fake_sni" is "random", a different random sni will be used for each connection
 otherwise, the set value will be used for all connections.
 
-MMDF only communicates with Xray-core, so you only need to connect to xray-core with socks5.
 
 ## Requirements:
 1. xray-core(v2rayng in android)
