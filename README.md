@@ -83,7 +83,7 @@ except in cases where the IP is blocked or the server does not allow domain fron
 
   reddit
 
-  meta: facebook, instagram, whatsapp (currently, the main IPs are blocked in Iran(except whatsapp), you should use fallback addresses(see: https://github.com/patterniha/xray_configs/blob/main/serverless_config))
+  meta: facebook, instagram, whatsapp (currently, the main-addresses IPs are blocked in Iran(except whatsapp), you should use fallback-addresses (see: https://github.com/patterniha/xray_configs/blob/main/serverless_config))
 
   telegram (all IP ranges are blocked in iran)
 
