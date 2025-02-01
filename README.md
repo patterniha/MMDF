@@ -107,6 +107,6 @@ except in cases where the IP is blocked or the server does not allow domain fron
 # Security concerns:
 First, as mentioned, never use an unknown certificate.
 
-Due to the complexity of implementation, currently certificate validation is not performed between MMDF and the target server, and will be added soon.
+**WARNING**: because of the complexity of implementation, currently certificate validation is not performed between MMDF and the target server, and will be added soon.
 
 
