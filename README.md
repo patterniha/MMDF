@@ -105,8 +105,8 @@ except in cases where the IP is blocked or the server does not allow domain fron
   ...
 
 # Security concerns:
-first, as mentioned, never use an unknown certificate.
+First, as mentioned, never use an unknown certificate.
 
-currently certificate validation is not performed between MMDF and the target server.
+Due to the complexity of implementation, currently certificate validation is not performed between MMDF and the target server, and will be added soon.
 
-If this project is merged with Xray-core, certificate validation will definitely be implemented.
+
