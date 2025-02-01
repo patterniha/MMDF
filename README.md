@@ -66,7 +66,7 @@ you can create self-signed-certificate with openssl commands or use online websi
 # Limitation:
 except in cases where the IP is blocked or the server does not allow domain fronting, MMDF bypasses the GFW.
 
-* some websites that allow domain fronting(Although the IP of some of them may be blocked):
+* some websites that **allow** domain fronting(Although the IP of some of them may be blocked):
 
   all google services(google,youtube,...)
 
@@ -82,7 +82,7 @@ except in cases where the IP is blocked or the server does not allow domain fron
 
   ...
 
-* some websites that do not allow domain fronting:
+* some websites that **do not allow** domain fronting:
 
   almost all websites behind cloudflare
 
