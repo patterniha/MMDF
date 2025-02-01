@@ -45,7 +45,7 @@ you can create self-signed-certificate with "openssl" commands or use online web
 
      if successfully imported, you can view the certificate in: Setting -> Security and privacy -> More security settings -> View security certificates -> User.
 
-    * **windows**:
+    * **Windows**:
   
       in windows you need to import the certificate into both system and browser:
       * system:
