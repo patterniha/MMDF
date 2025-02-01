@@ -1,5 +1,6 @@
 # MMDF
 like fragment and noise, MMDF(Man in the Middle + Domain Fronting) is a DPI circumvention method.
+
 MMDF replace the tls-client-hello-sni with random/user-defined sni.(datails: https://github.com/XTLS/Xray-core/issues/4313#issuecomment-2613963340)
 
 # Usage:
