@@ -98,7 +98,7 @@ also, some services do not allow domain fronting.
 
   almost all websites behind cloudflare
 
-  all websites behind arvancloud
+  all websites behind arvancloud(unless fake-sni is behind arvancloud too)
 
   microsoft websites
 
