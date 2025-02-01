@@ -12,6 +12,7 @@ currently, only trojan inbound/outbound is implemented in MMDF.
 an example of xray-config for use with MMDF: https://github.com/patterniha/xray_configs/blob/main/example_xray_config_for_MMDF
 
 in MMDF-config if "fake_sni" is "random", a different random sni will be used for each connection
+
 otherwise, the set value will be used for all connections.
 
 
