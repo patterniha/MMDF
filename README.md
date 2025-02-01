@@ -54,9 +54,13 @@ you can create self-signed-certificate with "openssl" commands or use online web
         Settings -> Privacy and security -> Security -> Manage certificates -> Manage imported certificates from Windows -> Trusted Root Certification Authorities -> Import -> select the certificate file -> Place all certificates in the following store -> select "Trusted Root Certification Authorities"
         
 4. download xray-core with Loyalsoldier GeoFiles:
+
    https://github.com/XTLS/Xray-core/releases
+
    https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
+
    https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+
    replace the default geoip and geosite files with Loyalsoldier geoip and geosite files.(in v2rayng Loyalsoldier GeoFiles are the default, so you don't need to do this)
 
 5. Install python with "cryptography" package(pip install cryptography)
