@@ -18,7 +18,7 @@ otherwise, the set value will be used for all connections.
 
 ## Requirements:
 1. xray-core(v2rayng in android)
-2. python with "cryptography" package(pip install cryptography)(you need termux to install python in android)
+2. python with "cryptography" package
 3. a self-signed certificate(must be imported into 1. system 2. browser 3. MMDF-config)
 
 ## Self-Signed certificate:
@@ -63,7 +63,7 @@ you can create self-signed-certificate with "openssl" commands or use online web
 
    replace the default geoip and geosite files with Loyalsoldier geoip and geosite files.(in v2rayng Loyalsoldier GeoFiles are the default, so you don't need to do this)
 
-5. Install python with "cryptography" package(pip install cryptography)
+5. Install python with "cryptography" package(pip install cryptography)(if it gives an error in Android try: pkg/apt install python-cryptography) 
 
 6. run the xray-core(v2rayng in android) and "python main.py"
 
