@@ -66,6 +66,7 @@ you can create self-signed-certificate with "openssl" commands or use online web
 5. Install python with "cryptography" package(pip install cryptography)
 
 6. run the xray-core(v2rayng in android) and "python main.py"
+
    an example of xray-config for use with MMDF: https://github.com/patterniha/xray_configs/blob/main/example_xray_config_for_MMDF
 
 7. MMDF only communicates with Xray-core, so you only need to set the browser socks5 to: 127.0.0.1:10808 (in v2rayng this is the default socks5 port, so you don't need to do anything).
