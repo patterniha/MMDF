@@ -69,7 +69,7 @@ you can create self-signed-certificate with "openssl" commands or use online web
 
    an example of xray-config for use with MMDF: https://github.com/patterniha/xray_configs/blob/main/example_xray_config_for_MMDF
 
-7. MMDF only communicates with Xray-core, so you only need to set the browser socks5 to: 127.0.0.1:10808 (in v2rayng this is the default socks5 port, so you don't need to do anything).
+7. MMDF only communicates with Xray-core, so you only need to set the browser socks5 to xray-core-socks5-inbound: 127.0.0.1:10808 (in v2rayng this is the default socks5 port, so you don't need to do anything).
 
 # Limitation:
 except in cases where the IP is blocked or the server does not allow domain fronting, MMDF bypasses the GFW.
