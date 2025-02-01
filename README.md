@@ -98,6 +98,8 @@ also, some services do not allow domain fronting.
 
   almost all websites behind cloudflare
 
+  all websites behind arvancloud
+
   microsoft websites
 
   tiktok
@@ -105,6 +107,8 @@ also, some services do not allow domain fronting.
   twitch
 
   soundcloud
+
+  varzesh3
 
   ...
 
