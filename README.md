@@ -1,7 +1,7 @@
 # MMDF(Man in the Middle + Domain Fronting)
 MMDF is a DPI circumvention method.(like fragment and noise)
 
-it replaces the main-sni with a random/user-defined sni in the tls-client-hello for any tls-request.
+it replaces the main-sni with a random/user-defined sni in the tls-client-hello for **any **tls-request.
 
 this is done with "Instant Certificate" technique(datails: https://github.com/XTLS/Xray-core/issues/4313#issuecomment-2613963340)
 
