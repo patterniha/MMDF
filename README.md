@@ -115,7 +115,7 @@ also, some services do not allow domain fronting.
   ...
 
 # Security concerns
-First, as mentioned, never use an unknown certificate.
+as mentioned, never use an unknown certificate.
 
 **WARNING**: because of the complexity of implementation, currently certificate validation is not performed between MMDF and the target server, and will be added soon.
 
