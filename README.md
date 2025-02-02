@@ -17,7 +17,7 @@ if "fake_sni" is "random" in MMDF-config, a different random sni will be used fo
 
 otherwise, the set value will be used for all connections.
 
-if inbound-connection is not tls-connection MMDF redirect the connection to bypass_gateway without any change.
+if an inbound-connection is not tls-connection MMDF redirect the connection to bypass_gateway without any change.
 
 because xray-core can detect tls-connection and we only redirect tls-connection to MMDF, bypass_gateway is not used.
 
