@@ -73,12 +73,14 @@ you can create self-signed-certificate with "openssl" commands or use online web
 
 7. MMDF only communicates with Xray-core, so you only need to set the browser socks5 to xray-core-socks5-inbound: 127.0.0.1:10808 (in v2rayng this is the default socks5 port, so you don't need to do anything).
 
-# Limitation
+# Usage and Limitation
 except in cases where the IP is blocked, MMDF bypasses the GFW.
 
 MMDF does not change the IP, so it doesn't help with services that have Sanctioned Iran.
 
 also, some services do not allow domain fronting, so for a "reliable internet" you should only route websites-that-allow-domain-fronting to MMDF.
+
+if MMDF show outbound tls error: most likely, that website does not allow domain fronting.
 
 * **websites that allow domain fronting:**
 
