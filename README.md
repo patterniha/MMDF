@@ -92,8 +92,6 @@ also, some services do not allow domain fronting, so for a "reliable internet" y
 
 if MMDF show outbound tls error: most likely, that website does not allow domain fronting.
 
-if MMDF show inbound tls error: most likely you did not import the certificate correctly into the system/browser/MMDF-config.
-
 * **websites that allow domain fronting:**
 
   almost all google services(google,youtube,...)
