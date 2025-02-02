@@ -11,7 +11,7 @@ MMDF only communicates with Xray-core, it receive the data from xray-core, and a
 
 currently, only trojan inbound/outbound is implemented in MMDF.
 
-an example of xray-config for use with MMDF: https://github.com/patterniha/xray_configs/blob/main/example_xray_config_for_MMDF
+an example of xray-config for use with MMDF: [example_xray_config_for_MMDF](https://github.com/patterniha/xray_configs/blob/main/example_xray_config_for_MMDF)
 
 in MMDF-config if "fake_sni" is "random", a different random sni will be used for each connection
 
