@@ -90,13 +90,11 @@ also, some services do not allow domain fronting, so for a "reliable internet" y
 
 * websites that **do not allow** domain fronting:
 
-  almost all websites behind cloudflare
+  almost all websites behind cloudflare and cloudfront
 
   all websites behind arvancloud(unless fake-sni is behind arvancloud too)
 
-  microsoft websites
-
-  tiktok, twitch, soundcloud, varzesh3,...
+  tiktok, twitch, soundcloud, varzesh3, ...
 
 # Security concerns
 as mentioned, never use an unknown certificate.
