@@ -5,7 +5,7 @@ it replaces the main-sni with a random/user-defined sni in the tls-client-hello 
 
 this is done with "Instant Certificate" technique(datails: https://github.com/XTLS/Xray-core/issues/4313#issuecomment-2613963340)
 
-it is designed to work with xray-core.(or any tools that support trojan inbound/outbound)
+MMDF is designed to work with xray-core.(or any tools that support trojan inbound/outbound)
 
 MMDF only communicates with Xray-core, it receive the data from xray-core, and after processing, forwards the data to xray-core.
 
