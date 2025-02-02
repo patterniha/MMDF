@@ -84,14 +84,9 @@ also, some services do not allow domain fronting, so for a "reliable internet" y
 
   all google services(google,youtube,...)
 
-  twitter
+  facebook, instagram (currently, the main-addresses IPs are blocked in Iran, you should use fallback-addresses, see: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran))
 
-  reddit
-
-  facebook, instagram, whatsapp (currently, the main-addresses IPs are blocked in Iran(except whatsapp), you should use fallback-addresses, see: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran))
-
-
-  ...
+  twitter, reddit, whatsapp, ...
 
 * websites that **do not allow** domain fronting:
 
@@ -101,15 +96,7 @@ also, some services do not allow domain fronting, so for a "reliable internet" y
 
   microsoft websites
 
-  tiktok
-
-  twitch
-
-  soundcloud
-
-  varzesh3
-
-  ...
+  tiktok, twitch, soundcloud, varzesh3,...
 
 # Security concerns
 as mentioned, never use an unknown certificate.
