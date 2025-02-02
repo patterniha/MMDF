@@ -96,7 +96,7 @@ also, some services do not allow domain fronting, so for a "reliable internet" y
 
   all websites behind arvancloud(unless fake-sni is behind arvancloud too)
 
-  tiktok, twitch, soundcloud, varzesh3, ...
+  tiktok, twitch, soundcloud, ...
 
 # Security concerns
 as mentioned, never use an unknown certificate.
