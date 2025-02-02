@@ -92,7 +92,6 @@ also, some services do not allow domain fronting, so for a "reliable internet" y
 
   meta: facebook, instagram, whatsapp (currently, the main-addresses IPs are blocked in Iran(except whatsapp), you should use fallback-addresses (see: https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran))
 
-  telegram (but all IP ranges are blocked in iran)
 
   ...
 
