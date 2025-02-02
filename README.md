@@ -42,7 +42,7 @@ if MMDF show inbound ssl error: most likely you did not import the certificate c
 
 you can create self-signed-certificate with "openssl" commands or use online websites like: https://regery.com/en/security/ssl-tools/self-signed-certificate-generator and https://certificatetools.com.
 
-(These sites are the first search results on Google when you search: "create online self signed certificate", so these sites are probably safe.)
+(These sites are the first search results on Google when you search: "create online self signed certificate", so these sites are most likely safe.)
 
 ## Full setup tutorial
 1. create self-signed certificate with a desired name from https://regery.com/en/security/ssl-tools/self-signed-certificate-generator and download both the certificate and the private-key.
