@@ -104,7 +104,7 @@ if MMDF show outbound ssl error: most likely, that website does not allow domain
 
    - almost all websites behind cloudflare and cloudfront
 
-   - all websites behind arvancloud(unless fake-sni is behind arvancloud too)
+   - all websites behind arvancloud (unless fake-sni is behind arvancloud too)
 
    - tiktok, twitch, soundcloud, ...
 
