@@ -82,7 +82,9 @@ also, some services do not allow domain fronting, so for a "reliable internet" y
 
 * websites that **allow** domain fronting:
 
-  all google services(google,youtube,...)
+  almost all google services(google,youtube,...)
+  
+  almost all websites behind fastly
 
   facebook, instagram (currently, the main-addresses IPs are blocked in Iran, you should use fallback-addresses, see: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran))
 
