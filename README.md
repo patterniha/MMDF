@@ -49,7 +49,7 @@ you can create self-signed-certificate with "openssl" commands or use online web
 
    **WARNING: Don't use an unknown certificate, just create your own self-signed certificate and use it.**
 2. set the certificate and the private-key path in MMDF-config.
-3. import the certificate to the system and browser
+3. import the certificate into the system and browser
    * **Android**:
 
      for Android, you only need to import the certificate into the system:
