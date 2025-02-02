@@ -94,19 +94,19 @@ if MMDF show outbound ssl error: most likely, that website does not allow domain
 
 * **websites that allow domain fronting:**
 
-   almost all google services (google, youtube, ...)
+   - almost all google services (google, youtube, ...)
   
-   almost all websites behind fastly
+   - almost all websites behind fastly
 
-   twitter, reddit, instagram**, facebook**, whatsapp,...
+   - twitter, reddit, instagram**, facebook**, whatsapp,...
 
 * **websites that **do not allow** domain fronting:**
 
-   almost all websites behind cloudflare and cloudfront
+   - almost all websites behind cloudflare and cloudfront
 
-   all websites behind arvancloud(unless fake-sni is behind arvancloud too)
+   - all websites behind arvancloud(unless fake-sni is behind arvancloud too)
 
-   tiktok, twitch, soundcloud, ...
+   - tiktok, twitch, soundcloud, ...
 
  ** currently, instagram and facebook main-address IPs are blocked in Iran, you should use fallback-address IPs, see: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran)
 
