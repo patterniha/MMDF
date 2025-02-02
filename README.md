@@ -17,6 +17,14 @@ in MMDF-config if "fake_sni" is "random", a different random sni will be used fo
 
 otherwise, the set value will be used for all connections.
 
+if inbound-connection is not tls-connection MMDF redirect the connection to bypass_gateway without any change
+
+because xray-core can detect tls-connection and we only redirect tls-connection to MMDF, bypass_gateway is not used.
+
+if MMDF show outbound tls error: most likely, that website does not allow domain fronting.
+
+if MMDF show inbound tls error: most likely you did not import the certificate correctly into the system/browser/MMDF-config.
+
 
 ## Requirements
 1. xray-core(v2rayng in android)
@@ -29,6 +37,8 @@ for MMDF to work properly you need a "self-signed certificate" that must be impo
 the certificate must be "CA" and the certificate key-usages must include "Certificate Signing" and "CRL Signing".
 
 you must also specify the path to the certificate and its private key in the MMDF-config.
+
+if MMDF show inbound tls error: most likely you did not import the certificate correctly into the system/browser/MMDF-config.
 
 you can create self-signed-certificate with "openssl" commands or use online websites like: https://regery.com/en/security/ssl-tools/self-signed-certificate-generator and https://certificatetools.com.
 
@@ -81,6 +91,8 @@ MMDF does not change the IP, so it doesn't help with services that have Sanction
 also, some services do not allow domain fronting, so for a "reliable internet" you should only route websites-that-allow-domain-fronting to MMDF.
 
 if MMDF show outbound tls error: most likely, that website does not allow domain fronting.
+
+if MMDF show inbound tls error: most likely you did not import the certificate correctly into the system/browser/MMDF-config.
 
 * **websites that allow domain fronting:**
 
