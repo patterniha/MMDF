@@ -94,7 +94,7 @@ if MMDF show outbound ssl error: most likely, that website does not allow domain
 
 * **websites that allow domain fronting:**
 
-  almost all google services(google,youtube,...)
+  almost all google services (google, youtube, ...)
   
   almost all websites behind fastly
 
