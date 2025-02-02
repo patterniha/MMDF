@@ -86,7 +86,7 @@ also, some services do not allow domain fronting, so for a "reliable internet" y
   
   almost all websites behind fastly
 
-  facebook, instagram (currently, the main-addresses IPs are blocked in Iran, you should use fallback-addresses, see: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran))
+  facebook, instagram (currently, the main-addresses IPs are blocked in Iran, you should use fallback-addresses IPs, see: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran))
 
   twitter, reddit, whatsapp, ...
 
