@@ -115,4 +115,14 @@ as mentioned, never use an unknown certificate.
 
 **WARNING**: because of the complexity of implementation, currently certificate validation is not performed between MMDF and the target server, and will be added soon.
 
+# Alternatives:
+currently with using:
+ * chain-fragment (tlshello + tcp-fragment)
+ * noise for UDP
+ * DOH for dns
+ * using fallback-addresses for facebook and instagram
 
+all services except telegram are accessible in Iran without using any server.
+Although websites that have Sanctioned Iran are not accessible with serverless methods.
+
+[serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran)
