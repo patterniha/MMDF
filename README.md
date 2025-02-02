@@ -78,7 +78,7 @@ except in cases where the IP is blocked, MMDF bypasses the GFW.
 
 MMDF does not change the IP, so it doesn't help with services that have Sanctioned Iran.
 
-also, some services do not allow domain fronting.
+also, some services do not allow domain fronting, so for a "reliable internet" you should only route websites-that-allow-domain-fronting to MMDF.
 
 * websites that **allow** domain fronting:
 
