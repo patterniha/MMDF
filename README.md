@@ -84,8 +84,6 @@ also, some services do not allow domain fronting, so for a "reliable internet" y
 
   all google services(google,youtube,...)
 
-  almost all independent websites
-
   twitter
 
   reddit
