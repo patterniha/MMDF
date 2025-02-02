@@ -123,8 +123,9 @@ currently with using:
  * using fallback-addresses for facebook and instagram
 
 all services except telegram are accessible in Iran without using any server.
+
 Although websites that have Sanctioned Iran are not accessible with serverless methods.
 
-[serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran)
+a complete serverless config for iran: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran)
 
 but at any moment, fragment and noise may be blocked, while MMDF is unblockable(unless the IP is blocked)
