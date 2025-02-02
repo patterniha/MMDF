@@ -98,9 +98,7 @@ if MMDF show outbound ssl error: most likely, that website does not allow domain
   
   almost all websites behind fastly
 
-  twitter, reddit, instagram, facebook, whatsapp,...
-
-  (currently, instagram and facebook main-address IPs are blocked in Iran, you should use fallback-address IPs, see: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran))
+  twitter, reddit, instagram**, facebook**, whatsapp,...
 
 * **websites that **do not allow** domain fronting:**
 
@@ -109,6 +107,8 @@ if MMDF show outbound ssl error: most likely, that website does not allow domain
   all websites behind arvancloud(unless fake-sni is behind arvancloud too)
 
   tiktok, twitch, soundcloud, ...
+
+ ** currently, instagram and facebook main-address IPs are blocked in Iran, you should use fallback-address IPs, see: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran)
 
 # Security concerns
 as mentioned, never use an unknown certificate.
