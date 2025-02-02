@@ -21,9 +21,9 @@ if inbound-connection is not tls-connection MMDF redirect the connection to bypa
 
 because xray-core can detect tls-connection and we only redirect tls-connection to MMDF, bypass_gateway is not used.
 
-if MMDF show outbound tls error: most likely, that website does not allow domain fronting.(see: [Usage and Limitation](https://github.com/patterniha/MMDF/tree/main?tab=readme-ov-file#usage-and-limitation), [Alternatives](https://github.com/patterniha/MMDF/blob/main/README.md#alternatives))
+if MMDF show outbound ssl error: most likely, that website does not allow domain fronting.(see: [Usage and Limitation](https://github.com/patterniha/MMDF/tree/main?tab=readme-ov-file#usage-and-limitation), [Alternatives](https://github.com/patterniha/MMDF/blob/main/README.md#alternatives))
 
-if MMDF show inbound tls error: most likely you did not import the self-signed certificate correctly into the system/browser/MMDF-config.
+if MMDF show inbound ssl error: most likely you did not import the self-signed certificate correctly into the system/browser/MMDF-config.
 
 
 ## Requirements
