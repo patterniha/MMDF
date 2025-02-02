@@ -80,7 +80,7 @@ MMDF does not change the IP, so it doesn't help with services that have Sanction
 
 also, some services do not allow domain fronting, so for a "reliable internet" you should only route websites-that-allow-domain-fronting to MMDF.
 
-* websites that **allow** domain fronting:
+* **websites that allow domain fronting:**
 
   almost all google services(google,youtube,...)
   
@@ -90,7 +90,7 @@ also, some services do not allow domain fronting, so for a "reliable internet" y
 
   twitter, reddit, whatsapp, ...
 
-* websites that **do not allow** domain fronting:
+* **websites that **do not allow** domain fronting:**
 
   almost all websites behind cloudflare and cloudfront
 
