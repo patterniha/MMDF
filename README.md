@@ -126,7 +126,7 @@ if MMDF show outbound ssl error: most likely, that website does not allow domain
 
    - tiktok, twitch, soundcloud, ...
 
-currently, instagram and facebook main-address IPs are blocked in Iran, you should use fallback-address IPs, see: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran)
+currently, instagram and facebook main-address IPs are blocked in Iran, you should use fallback-address IPs, see: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/tree/main?tab=readme-ov-file#serverless-config-for-iran)
 
 # Security concerns
 as mentioned, never use an unknown certificate.
@@ -144,4 +144,4 @@ all services except telegram are accessible in Iran without using any server.
 
 Although websites that have Sanctioned Iran are not accessible with serverless methods.
 
-a complete serverless config for iran: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran)
+a complete serverless config for iran: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/tree/main?tab=readme-ov-file#serverless-config-for-iran)
