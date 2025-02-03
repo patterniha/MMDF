@@ -137,7 +137,7 @@ as mentioned, never use an unknown certificate.
 currently with using:
  * chain-fragment (tlshello + tcp-fragment)
  * noise for UDP
- * DOH for dns
+ * uTLS for DOH (DOH domain-fronting)
  * using fallback-addresses for facebook and instagram
 
 all services except telegram are accessible in Iran without using any server.
