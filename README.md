@@ -138,8 +138,8 @@ a complete serverless config for iran: [serverless_config_for_iran](https://gith
 
 but at any moment, fragment and noise may be blocked
 
-while MMDF is unblockable because the only way to block MMDF is to block the IP,
+but the only way to block MMDF is to block the IP,
 
-but blocking an IP will cause all services behind that IP to stop working,
+but blocking the IP will cause all services behind that IP to stop working,
 
 so MMDF is **UNBLOCKABLE**.
