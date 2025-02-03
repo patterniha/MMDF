@@ -5,13 +5,15 @@ it replaces the main-sni with a random/user-defined sni in the tls-client-hello 
 
 this is done with "Instant Certificate" technique(datails: https://github.com/XTLS/Xray-core/issues/4313#issuecomment-2613963340)
 
-at any moment, fragment and noise may be blocked
+fragment and noise are not the future, they can be blocked at any moment,
 
 but the only way to block MMDF is to block the IP,
 
 but blocking the IP will cause all services behind that IP to stop working,
 
 so MMDF is **UNBLOCKABLE**.
+
+///
 
 MMDF is designed to work with xray-core.(or any tools that support trojan inbound/outbound)
 
