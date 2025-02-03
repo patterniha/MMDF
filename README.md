@@ -1,13 +1,11 @@
 # MMDF(Man in the Middle + Domain Fronting)
-MMDF is a DPI circumvention method.(like fragment and noise)
+MMDF is a DPI circumvention method without using any server.
 
 it replaces the main-sni with a random/user-defined sni in the tls-client-hello for **any** tls-request.
 
 this is done with "Instant Certificate" technique(datails: https://github.com/XTLS/Xray-core/issues/4313#issuecomment-2613963340)
 
-fragment and noise are not the future, they can be blocked at any moment,
-
-but the only way to block MMDF is to block the IP,
+the only way to block MMDF is to block the IP,
 
 but blocking the IP will cause all services behind that IP to stop working,
 
