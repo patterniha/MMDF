@@ -102,7 +102,7 @@ if MMDF show outbound ssl error: most likely, that website does not allow domain
   
    - almost all websites behind fastly
 
-   - twitter, reddit, instagram**, facebook**, whatsapp,...
+   - twitter, reddit, instagram, facebook, whatsapp,...
 
 * **websites that **do not allow** domain fronting:**
 
