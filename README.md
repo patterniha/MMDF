@@ -64,6 +64,10 @@ you can create self-signed-certificate with "openssl" commands or use online web
         right click on the certificate -> Install certificate -> Local machine -> Place all certificates in the following store -> select "Trusted Root Certification Authorities"
       * browser(chrome):
         Settings -> Privacy and security -> Security -> Manage certificates -> Manage imported certificates from Windows -> Trusted Root Certification Authorities -> Import -> select the certificate file -> Place all certificates in the following store -> select "Trusted Root Certification Authorities"
+
+    * **Others**:
+
+      see: [SSL Certificates](https://www.charlesproxy.com/documentation/using-charles/ssl-certificates/)
         
 4. download xray-core with Loyalsoldier GeoFiles:
 
@@ -88,7 +92,7 @@ except in cases where the IP is blocked, MMDF bypasses the GFW.
 
 MMDF does not change the IP, so it doesn't help with services that have Sanctioned Iran.
 
-in android, only chromium-based browsers(chrome, edge, opera, brave, dolphin, kiwi, ...) support user-certificate, other apps must have added user-certificate-support to the app's manifest.([link1](https://stackoverflow.com/questions/4461360/how-to-install-trusted-ca-certificate-on-android-device), [link2](https://stackoverflow.com/questions/56295458/how-to-trust-a-user-added-certificate-in-android))
+in android, only chromium-based browsers(chrome, edge, opera, brave, dolphin, kiwi, ...) support user-certificate, other apps must have added user-certificate-support to the app's manifest.([link1](https://stackoverflow.com/questions/4461360/how-to-install-trusted-ca-certificate-on-android-device), [link2](https://stackoverflow.com/questions/56295458/how-to-trust-a-user-added-certificate-in-android), [link3](https://www.charlesproxy.com/documentation/using-charles/ssl-certificates/))
 
 also, some services do not allow domain fronting, so for a "reliable internet" you should only route websites-that-allow-domain-fronting to MMDF.
 
