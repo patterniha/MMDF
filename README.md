@@ -3,7 +3,7 @@ MMDF is a DPI circumvention method without using any server.
 
 it replaces the main-sni with a random/user-defined sni in the tls-client-hello for **any** tls-request.
 
-this is done with "Instant Certificate" technique(datails: https://github.com/XTLS/Xray-core/issues/4313#issuecomment-2613963340)
+this is done with "Instant Certificate" technique(datails: https://github.com/XTLS/Xray-core/issues/4313#issuecomment-2613963340).
 
 the only way to block MMDF is to block the IP,
 
