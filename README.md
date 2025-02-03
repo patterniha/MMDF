@@ -116,7 +116,7 @@ if MMDF show outbound ssl error: most likely, that website does not allow domain
 
    - all meta services (facebook, instagram, whatsapp, ...)
 
-   - twitter, reddit, netflix, ...
+   - twitter, reddit, netflix, pinterest, ...
 
 * **websites that **do not allow** domain fronting:**
 
