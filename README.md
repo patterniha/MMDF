@@ -5,6 +5,14 @@ it replaces the main-sni with a random/user-defined sni in the tls-client-hello 
 
 this is done with "Instant Certificate" technique(datails: https://github.com/XTLS/Xray-core/issues/4313#issuecomment-2613963340)
 
+at any moment, fragment and noise may be blocked
+
+but the only way to block MMDF is to block the IP,
+
+but blocking the IP will cause all services behind that IP to stop working,
+
+so MMDF is **UNBLOCKABLE**.
+
 MMDF is designed to work with xray-core.(or any tools that support trojan inbound/outbound)
 
 MMDF only communicates with Xray-core, it receive the data from xray-core, and after processing, forwards the data to xray-core.
@@ -135,11 +143,3 @@ all services except telegram are accessible in Iran without using any server.
 Although websites that have Sanctioned Iran are not accessible with serverless methods.
 
 a complete serverless config for iran: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran)
-
-but at any moment, fragment and noise may be blocked
-
-but the only way to block MMDF is to block the IP,
-
-but blocking the IP will cause all services behind that IP to stop working,
-
-so MMDF is **UNBLOCKABLE**.
