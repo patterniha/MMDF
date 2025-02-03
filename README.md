@@ -112,7 +112,7 @@ if MMDF show outbound ssl error: most likely, that website does not allow domain
 
    - tiktok, twitch, soundcloud, ...
 
- ** currently, instagram and facebook main-address IPs are blocked in Iran, you should use fallback-address IPs, see: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran)
+currently, instagram and facebook main-address IPs are blocked in Iran, you should use fallback-address IPs, see: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/blob/main/serverless_config_for_iran)
 
 # Security concerns
 as mentioned, never use an unknown certificate.
