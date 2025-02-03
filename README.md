@@ -88,7 +88,7 @@ except in cases where the IP is blocked, MMDF bypasses the GFW.
 
 MMDF does not change the IP, so it doesn't help with services that have Sanctioned Iran.
 
-in android, only chromium-based browsers(chrome, edge, opera, brave, dolphin, kiwi,...) support user-certificate,
+in android, only chromium-based browsers(chrome, edge, opera, brave, dolphin, kiwi, ...) support user-certificate,
 
 other apps must have added user-certificate-support to the app's manifest.([link1](https://stackoverflow.com/questions/4461360/how-to-install-trusted-ca-certificate-on-android-device), [link2](https://stackoverflow.com/questions/56295458/how-to-trust-a-user-added-certificate-in-android))
 
