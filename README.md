@@ -27,7 +27,7 @@ otherwise, the set value will be used for all connections.
 
 if inbound-connection is not tls-connection MMDF redirect the connection to bypass_gateway without any change.
 
-because xray-core can detect tls-connection and we only redirect tls-connection to MMDF, bypass_gateway is not used.
+because xray-core can detect tls-connections and we only redirect tls-connections to MMDF, bypass_gateway is not used.
 
 if MMDF show outbound ssl error: most likely, that website does not allow domain fronting.(see: [Usage and Limitation](https://github.com/patterniha/MMDF/tree/main?tab=readme-ov-file#usage-and-limitation), [Alternatives](https://github.com/patterniha/MMDF/blob/main/README.md#alternatives))
 
