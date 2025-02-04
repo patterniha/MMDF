@@ -1,0 +1,24 @@
+{
+  "fake_sni": "random",
+  "full_fake_sni_length": "29-32",
+  "fake_sni_tld": ".com",
+
+  "listen_host": "0.0.0.0",
+  "listen_port": 12430,
+  "listen_trojan_password": "domain_fronting_pass",
+
+  "main_gateway_host": "127.0.0.1",
+  "main_gateway_port": 12431,
+  "main_gateway_trojan_password": "main_gateway_pass",
+
+  "bypass_gateway_host": "127.0.0.1",
+  "bypass_gateway_port": 12432,
+  "bypass_gateway_trojan_password": "bypass_gateway_pass",
+
+  "issuer_certificate_path": "certificate.crt",
+  "issuer_private_key_path": "private.key",
+  "issuer_private_key_pass": null,
+
+  "instant_certificate_temp_file_path": ".instant_certificate"
+
+}
