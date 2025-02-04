@@ -19,7 +19,7 @@ MMDF only communicates with Xray-core, it receive the data from xray-core, and a
 
 currently, only trojan inbound/outbound is implemented in MMDF.
 
-an example of xray-config for use with MMDF: [example_xray_config_for_MMDF](https://github.com/patterniha/xray_configs/blob/main/example_xray_config_for_MMDF)
+an example of xray-config for use with MMDF: [example_xray_config_for_MMDF](https://github.com/patterniha/xray_configs/blob/main/example_xray_config_for_MMDF.json)
 
 if "fake_sni" is "random" in MMDF-config, a different random sni will be used for each connection
 
@@ -91,7 +91,7 @@ you can create self-signed-certificate with "openssl" commands or use online web
 
 6. run the xray-core(v2rayng in android) and "python main.py"
 
-   an example of xray-config for use with MMDF: [example_xray_config_for_MMDF](https://github.com/patterniha/xray_configs/blob/main/example_xray_config_for_MMDF)
+   an example of xray-config for use with MMDF: [example_xray_config_for_MMDF](https://github.com/patterniha/xray_configs/blob/main/example_xray_config_for_MMDF.json)
 
 7. MMDF only communicates with Xray-core, so you only need to set the browser socks5 to xray-core-socks5-inbound: 127.0.0.1:10808 (in v2rayng this is the default socks5 port, so you don't need to do anything).
 
