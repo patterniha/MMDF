@@ -58,4 +58,16 @@ class DomainFronter(BypassRelay):
             self.relay_close()
         else:
             self.relay_correct_usage_check()
-            return to_return
+            selected_alpn = self.outgoing_tp.get_raw_transport().writer.get_extra_info(
+                'ssl_object').selected_alpn_protocol()
+            all_out_alpn = self.upgrade_outgoing_magic["out_alpn"]
+            if not ((all_out_alpn == ["h2", "http/1.1"] and selected_alpn == "h2") or (
+                    all_out_alpn == ["http/1.1"] and selected_alpn == "http/1.1")):
+                p_tj = parse_trojan_protocol(self.gateway_trojan)
+                print("Info: Special Case Found: ", "sni: ", self.upgrade_incoming_magic["in_sni"], "fake_sni: ",
+                      self.upgrade_outgoing_magic["kwargs"]["server_hostname"], "alpn: ",
+                      self.upgrade_incoming_magic["in_alpn"], "selected_alpn: ",  selected_alpn,
+                      "address_type: ", p_tj["remote_address_type"],
+                      "address: ", p_tj["remote_address"], "port: ", p_tj["remote_port"])
+
+                return to_return
