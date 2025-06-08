@@ -19,7 +19,7 @@ MMDF only communicates with Xray-core, it receive the data from xray-core, and a
 
 currently, only trojan inbound/outbound is implemented in MMDF.
 
-an example of xray-config for use with MMDF: [example_xray_config_for_MMDF](https://github.com/patterniha/xray_configs/blob/main/example_xray_config_for_MMDF.json)
+an example of xray-config for use with MMDF: [example_xray_config_for_MMDF](https://github.com/patterniha/MMDF/blob/main/Xray-core_config.jsonc)
 
 if "fake_sni" is "random" in MMDF-config, a different random sni will be used for each connection
 
@@ -91,7 +91,7 @@ you can create self-signed-certificate with "openssl" commands or use online web
 
 6. run the xray-core(v2rayng in android) and "python main.py"
 
-   an example of xray-config for use with MMDF: [example_xray_config_for_MMDF](https://github.com/patterniha/xray_configs/blob/main/example_xray_config_for_MMDF.json)
+   an example of xray-config for use with MMDF: [example_xray_config_for_MMDF](https://github.com/patterniha/MMDF/blob/main/Xray-core_config.jsonc)
 
 7. MMDF only communicates with Xray-core, so you only need to set the browser socks5 to xray-core-socks5-inbound: 127.0.0.1:10808 (in v2rayng this is the default socks5 port, so you don't need to do anything).
 
@@ -124,22 +124,9 @@ if MMDF show outbound ssl error: most likely, that website does not allow domain
 
    - twitch, soundcloud, ...
 
-currently, instagram and facebook main-address IPs are blocked in Iran, you should use fallback-address IPs, see: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/tree/main?tab=readme-ov-file#serverless-config-for-iran)
 
 # Security concerns
 as mentioned, never use an unknown certificate.
 
 **WARNING**: because of the complexity of implementation, currently certificate validation is not performed between MMDF and the target server, and will be added soon.
 
-# Alternatives:
-currently with using:
- * chain-fragment (tlshello + tcp-fragment)
- * noise for UDP
- * uTLS for DOH (DOH domain-fronting)
- * using fallback-addresses for facebook and instagram
-
-all services except telegram are accessible in Iran without using any server.
-
-Although websites that have Sanctioned Iran are not accessible with serverless methods.
-
-a complete serverless config for iran: [serverless_config_for_iran](https://github.com/patterniha/xray_configs/tree/main?tab=readme-ov-file#serverless-config-for-iran)
