@@ -1,0 +1,140 @@
+// @patterniha
+// example config for MMDF
+// require Loyalsoldier geoip.dat and geosite.dat
+// https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
+// https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+
+{
+  "log": {
+    "loglevel": "warning", "dnsLog": true
+  },
+  
+  "dns": {
+    "servers": ["h2c://1.1.1.1/dns-query"],
+    "tag": "dns-query"
+  },
+  
+  "inbounds": [
+    {
+      "tag": "dns-in",
+      "port": 10853,
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "8.8.8.8",
+        "port": 53,
+        "network": "tcp,udp"        
+      }      
+    },	
+    {
+      "tag": "socks-in",
+      "port": 10808,
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls", "quic"],
+        "routeOnly": false
+      },
+      "settings": {"udp": true}
+    },	
+    {
+      "tag": "from-MMDF-main-gateway",
+      "port": 12431,
+      "protocol": "trojan",
+      "settings": {
+        "clients": [
+          {
+            "password":"main_gateway_pass"                        
+          }
+        ]
+      }
+    },	
+    {
+      "tag": "from-MMDF-bypass-gateway",
+      "port": 12432,
+      "protocol": "trojan",
+      "settings": {
+        "clients": [
+          {
+            "password":"bypass_gateway_pass"                        
+          }
+        ]
+      }
+    }  
+  ],
+  
+  "outbounds": [    
+    {
+      "tag": "direct",
+      "protocol": "freedom",      
+      "settings": {"domainStrategy": "ForceIP"}
+    },		        		
+    {
+      "tag": "dns-out",
+      "protocol": "dns"                  
+    },
+    {
+      "tag": "doh-utls",
+      "protocol": "freedom",      
+      "settings": {"domainStrategy": "ForceIP"},
+      "streamSettings": {      
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.bing.com",
+          "verifyPeerCertInNames": ["fromMitM"],
+          "alpn": ["h2", "http/1.1"],
+          "fingerprint": "chrome"
+        }
+      }              
+    },	
+    {
+      "tag": "to-MMDF",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "127.0.0.1",
+            "port": 12430,
+            "password": "domain_fronting_pass"
+          }
+        ]
+      }
+    }			          
+  ],
+  
+  "routing": {
+    "domainStrategy": "IPOnDemand",	  
+    "rules": [           
+      {
+        "type": "field","outboundTag": "dns-out",
+        "inboundTag": ["dns-in"]
+      },		   
+      {
+        "type": "field","outboundTag": "dns-out",
+        "inboundTag": ["socks-in"], "port": 53
+      },		   
+      {
+        "type": "field","outboundTag": "doh-utls",
+        "inboundTag": ["dns-query"]
+      },
+      {
+        "type": "field","outboundTag": "direct",
+        "inboundTag": ["from-MMDF-main-gateway", "from-MMDF-bypass-gateway"]
+      },
+      {
+        "type": "field","outboundTag": "direct",
+        "domain": ["geosite:tiktok", "geosite:twitch", "geosite:soundcloud"]
+      },
+      {
+        "type": "field","outboundTag": "direct",
+        "ip": ["geoip:cloudflare", "geoip:cloudfront"]
+      },                      		              		   
+      {
+        "type": "field","outboundTag": "to-MMDF",
+        "inboundTag": ["socks-in"], "protocol": ["tls"], "network": "tcp"
+      },                                          	                                                  
+      {"type": "field","outboundTag": "direct",
+       "port": "0-65535"
+      }
+    ]
+  }
+}
