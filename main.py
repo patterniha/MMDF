@@ -13,7 +13,7 @@ from controller import Controller
 async def trojan_handler(reader: asyncio.StreamReader, writer: asyncio.StreamWriter):
     try:
         incoming_tp = WrappedTransport[TcpStreamTransport](TcpStreamTransport(TransportType.incoming, reader, writer))
-        await asyncio.sleep(0.015625)
+        await asyncio.sleep(0.015626)
         try:
             trojan_data = await incoming_tp.read(wait_for_trojan_timeout)
         except Exception as e:
