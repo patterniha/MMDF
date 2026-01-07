@@ -19,12 +19,12 @@ from initialize import issuer_private_key_pass, issuer_private_key_path, issuer_
     upgrade_incoming_shutdown_timeout, others_connect_upgrade_timeout, others_connect_upgrade_handshake_timeout, \
     others_connect_upgrade_shutdown_timeout, incoming_write_timeout, outgoing_write_timeout, \
     private_domain_front_trojan_hashed_password, fake_sni, fake_sni_tld, pure_fake_sni_length_min, \
-    pure_fake_sni_length_max, incoming_wait_for_cancel_timeout, instant_certificate_temp_file_path
+    pure_fake_sni_length_max, incoming_wait_for_cancel_timeout, instant_certificate_temp_file_path, max_san_list_size
 
 
 class Controller:
     icc = InstantCertServerSideCtx(issuer_cert_path, issuer_private_key_path, issuer_private_key_pass,
-                                   instant_certificate_temp_file_path)
+                                   instant_certificate_temp_file_path, max_san_list_size)
 
     @staticmethod
     def get_fake_sni():

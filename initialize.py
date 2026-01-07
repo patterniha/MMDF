@@ -92,6 +92,7 @@ others_connect_upgrade_shutdown_timeout = 30
 incoming_wait_for_cancel_timeout = 30
 incoming_write_timeout = None
 outgoing_write_timeout = None
+max_san_list_size = 1024
 
 if len(frozenset((main_gateway_trojan_hashed_password, bypass_gateway_trojan_hashed_password,
                   repeater_domain_front_trojan_hashed_password,
