@@ -65,6 +65,9 @@ def parse_tls_client_hello(data: bytes) -> dict:
             sni_raw_bytes = data[sni_ind:sni_ind + sni_len]
             sni = sni_raw_bytes.decode()
             assert len(sni) == sni_len
+            if sni == "" or sni[0] == ".":
+                raise ValueError
+
 
 
         elif ext_type == b"\x00\x2b":  # supported version
